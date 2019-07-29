@@ -1,1 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>IMDB</title>
 
+    <style>
+     . container . Search-container{
+     	float: right;
+     }
+    </style>
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	<div class ="container">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light navbar-inverse">
+			
+				<div class="collapse navbar-collapse" id="navbarNav">
+    							<ul class="navbar-nav">
+      							<li class="nav-item active">
+       							<a class="nav-link" href="#">Movies</a>
+     							 </li>
+     							 <li class="nav-item">
+       							 <a class="nav-link" href="#">Tv shows</a>
+     							 </li>
+     							 <li class="nav-item">
+       							<a class="nav-link" href="#">Celebraties</a>
+     							 </li>
+       							<li class="nav-item">
+        							<a class="nav-link" href="#">Watchlist</a>
+      							</li>
+    							</ul>
+     							<form class="form-inline" >
+        							<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+									<button class="btn btn-outline-success my-2 my-sm-0 float-xs-right float-md-none" type="submit" align="right" >Search</button>
+      								</form>
+
+  				</div>
+</div>
+</nav>
+
+
+<div id="heading">
+<h1>Top Movies of 2019</h1> <h5><button id="+movies" class="btn btn-primary btn-sm">+Movies</button></h5>
+</div>
+	<table border="1">
+		<thead>
+			<tr>
+				<th>Poster</th>
+				<th>Movie Name</th>
+				<th>Year of Release</th>
+				<th>Plot</th>
+				<th>Cast</th>
+				<th class="text-center">
+        <button id="edit" class="btn btn-primary btn-sm">Edit</button>
+      </th>
+			</tr>			
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<div class= "thumbnail"></div>
+					<img src="https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_QL50_SY1000_CR0,0,674,1000_AL_.jpg"height = "150px" width="150px">
+				</td>
+				<td>Avenger Infinity War</td>
+				<td>2019</td>
+				<td>Avengers: Endgame picks up after the events of Avengers: Infinity War, which saw the Avengers divided and defeated. Thanos won the day and used the Infinity Stones to snap away half of all life in the universe. Only the original Avengers - Iron Man, Captain America, Thor, Hulk, Black Widow, and Hawkeye remain, along with some key allies like War Machine, Ant-Man, Rocket Raccoon, Nebula, and Captain Marvel. Each of the survivors deals with the fallout from Thanos' decimation in different ways, but when an opportunity presents itself to potentially save those who vanished, they all come together and set out to defeat Thanos, once and for all.</td>
+				<td>Robert Downey Jr., Chris Evans, Mark Ruffalo, Chris Hemsworth</td>
+				<td><span class="btn_edit"> <a href="#" class="btn btn-link" row_id="'+row_id+'">Edit</a></span> </td>
+			</tr>
+			<tr>
+				<td>
+					<div class= "thumbnail"></div>
+					<img src="https://www.comingtrailer.com/timthumb.php?src=https://www.comingtrailer.com/images/poster/Uri1.jpg&w=285" height = "150px" width="150px">
+				</td>
+				<td>Uri The Surgical Strike</td>
+				<td>2019</td>
+				<td>Divided over seven chapters, the film chronicles the events of the surgical strike conducted by the Indian military against suspected militants in Pakistan occupied Kashmir. It tells the story of the 11 tumultuous events over which the operation was carried out. Indian army special forces carry out a covert operation to avenge the killing of fellow army men at their base by a terrorist group.</td>
+				<td>Vicky Kaushal, Paresh Rawal, Yami Gautam, Mohit Raina, Rajit Kapoor</td>
+				<td><span class="btn_edit"> <a href="#" class="btn btn-link" row_id="'+row_id+'">Edit</a></span></td>
+			</tr>
+			<tr>
+				<td>
+					<div class= "thumbnail"></div>
+					<img src="https://pbs.twimg.com/media/D4aX5IVW0AAJ7vP?format=jpg&name=small" height = "150px" width="150px">
+				</td>
+				<td>Bahart</td>
+				<td>2019</td>
+				<td>An eight-year-old boy makes a vow to his father that he will keep his family together no matter what happens, a promise that he works hard to keep over the next 60 years of his life</td>
+				<td>Salman Khan, Katrina Kaif</td>
+				<td><span class="btn_edit"> <a href="#" class="btn btn-link" row_id="'+row_id+'">Edit</a></span></td>
+			</tr>
+			<tr>
+				<td>
+					<div class= "thumbnail"></div>
+					<img src="https://m.media-amazon.com/images/M/MV5BYTRhZWVkNTctMzRmYy00MDk1LWIzNDYtMjA1ZGE5YWJkYjU0XkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_UY268_CR4,0,182,268_AL_.jpg" height = "150px" width="150px">
+				</td>
+				<td>Keshri</td>
+				<td>2019</td>
+				<td>This period war-drama showcases the 1897 Battle of Saragarhi. The plot focuses on Havildar Ishar Singh who led a platoon of 21 Sikhs against an invading army of 10,000 Afghans to defend the North-West Frontier Province. The event is considered as one of the greatest last-stands in history.</td>
+				<td>Akshay Kumar, Parineeti Chopra, Suvinder Vicky</td>
+				<th><span class="btn_edit"> <a href="#" class="btn btn-link" row_id="'+row_id+'">Edit</a></span></th>
+			</tr>
+			<tr>
+				<td>
+					<div class= "thumbnail"></div>
+					<img src="https://m.media-amazon.com/images/M/MV5BMTkzNmViZjktMDQ2NS00YTllLWE3NTYtMTJmOTZlNTg2YzBlXkEyXkFqcGdeQXVyNzkxOTEyMjI@._V1_QL50_SY1000_SX750_AL_.jpg" height = "150px" width="150px">
+				</td>
+				<td>Super 30</td>
+				<td>2019</td>
+				<td>Brilliant mathematician Anand Kumar helps 30 smart but underprivileged students prepare for entrance exams for the Indian Institutes of Technology</td>
+				<td>Hrithik Roshan, Mrunal Thakur, Pankaj Tripathi</td>
+				<td><span class="btn_edit"> <a href="#" class="btn btn-link" row_id="'+row_id+'">Edit</a></span></td>
+			</tr><tr>
+				<td>
+
+					<img src="https://th.thgim.com/entertainment/movies/gzbzb9/article26470136.ece/alternates/FREE_660/Badla" height = "150px" width="150px">
+				</td>
+				<td>Badla</td>
+				<td>2019</td>
+				<td>A dynamic young entrepreneur finds herself locked in a hotel room with the corpse of her dead lover. She hires a prestigious lawyer to defend her and they work together to figure out what actually happened.</td>
+				<td>Amitabh Bachchan, Taapsee Pannu, Amrita Singh,</td>
+				<td><span class="btn_edit"> <a href="#" class="btn btn-link" row_id="'+row_id+'">Edit</a></span></td>
+			</tr>
+
+			
+					
+
+		</tbody>
+	</table>
+	
+</body>
+</html>

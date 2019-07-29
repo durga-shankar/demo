@@ -1,0 +1,13 @@
+
+  #heading h1, h5 { display: inline; }
+  #heading h5{
+  	position:  absolute;
+
+  	right: 16px;
+  }
+  .search-btn{
+  	top: 40px;
+  	right: 80px;
+  	position: absolute;
+  	text-decoration: none;
+  }
